@@ -41,4 +41,4 @@ jobs:
         uses: JamesIves/github-pages-deploy-action@v4
         with:
           branch: gh-pages # 打包的内容放到build分支下
-          folder: dist
+          folder: .

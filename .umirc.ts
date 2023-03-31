@@ -8,6 +8,11 @@ export default defineConfig({
   model: {},
   initialState: {},
   request: {},
+  valtio:{},
+  define:{
+    SupabaseUrl:process.env?.SupabaseUrl,
+    SupabaseKey:process.env?.SupabaseKey
+  },
   layout: {
     title: '@umijs/max',
   },

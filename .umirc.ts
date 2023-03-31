@@ -2,6 +2,7 @@ import { defineConfig } from '@umijs/max';
 
 export default defineConfig({
   base:"/web/",
+  publicPath:"/web",
   antd: {},
   access: {},
   model: {},

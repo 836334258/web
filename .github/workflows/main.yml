@@ -1,7 +1,7 @@
 # 项目名
 name: dumi deploy test
 
-# 只有在master分支发生push事件时触发
+# 只有在main分支发生push事件时触发
 on:
   push:
     branches:
@@ -16,6 +16,10 @@ jobs:
       # 拉代码
       - name: Checkout code
         uses: actions/checkout@v3
+      - name: setup pnpm 
+        uses: pnpm/action-setup@v2
+        with:
+          version: 6.32.9
 
       # 下载node，我这里指定了15.x，这个版本可随意，高于dumi规定的node版本即可
       - name: Use Node.js
